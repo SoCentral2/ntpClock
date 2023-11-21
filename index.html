@@ -7,7 +7,7 @@
     <!-- location of stylesheet-->
     <link rel="stylesheet" type="text/css" href="./resources/styles.css">
     <link rel="stylesheet" type="text/css" href="./resources/reset.css">
-    <script src="./resources/ntp.js"></script>
+
   </head>
 
     <body>
@@ -25,17 +25,25 @@
  
     <h3>Enter UTC Offset details</h3>
 
-    <label class="label" for="ntpServer">NTP Server address:</label><br>
+    <label class="label" for="selectHours">Hours:</label><br>
     <select id="selectHours">
         <option>+ / - 13</option>
-      </select>
+      </select><br>
+      <label class="label" for="ntpMinutes">Minutes:</label><br>
+      <select id="selectMinutes">
+          <option>0 - 60</option>
+        </select><br>
+        <label class="label" for="ntpSeconds">Seconds:</label><br>
+        <select id="selectSeconds">
+            <option>0 - 60</option>
+          </select><br><br>
 
       <input type="submit" value="Submit">
   </form>
 
   <!--Javascript section-->
 
-
+    <script type="text/javascript" src="./resources/ntp.js"></script> 
     </body>
 
 
