@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- location of stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link rel="stylesheet" type="text/css" href="./resources/reset.css">
+    <script src="resources/ntp.js"></script>
+  </head>
+
+    <body>
+<h1>NTP Clock Setup</h1>
+<h3>Enter local wireless network credentials</h3>
+<form id="ntpClock" action="/action_page.php">
+    <label class="label" for="ssidName">SSID Name:</label><br>
+    <input class="box" type="text" id="ssidName" name="ssidName" value="2-32 characters"><br><br>
+
+    <label class="label" for="password">Password:</label><br>
+    <input class="box" type="text" id="password" name="password" value="0-63 characters"><br><br>
+
+    <label class="label" for="ntpServer">NTP Server address:</label><br>
+    <input class="box" type="text" id="ntpServer" name="ntpServer" value="ntpl.npl.co.uk"><br><br>
+ 
+    <h3>Enter UTC Offset details</h3>
+
+    <label class="label" for="ntpServer">NTP Server address:</label><br>
+    <select id="selectHours">
+        <option>+ / - 13</option>
+      </select>
+
+      <input type="submit" value="Submit">
+  </form>
+
+  <!--Javascript section-->
+
+
+    </body>
+
+
+</html>
