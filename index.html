@@ -42,7 +42,7 @@
   </form>
 
   <!--Javascript section-->
-
+  <!-- References need to go here rather than in the header because otherwise the script is running before the DOM is completely done loading. If you put your <script> tag right before your closing body tag (</body>), it will run after the DOM is loaded, and you will be able to traverse the DOM like normal.-->
     <script type="text/javascript" src="./resources/ntp.js"></script> 
     </body>
 
